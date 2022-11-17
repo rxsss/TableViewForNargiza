@@ -19,6 +19,18 @@ class ViewController: UIViewController {
         tableView.dataSource = self
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as! AddNewContactViewController
+        dest.delegate = self
+    }
+    
+}
+
+extension ViewController: AddNewContactDelegate {
+    func addContact(name: String) {
+        names.append(name)
+        tableView.reloadData()
+    }
 }
 
 extension ViewController: UITableViewDataSource {
