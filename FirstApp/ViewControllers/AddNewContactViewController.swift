@@ -8,14 +8,16 @@
 import UIKit
 
 protocol AddNewContactDelegate {
-    func addContact(name: String)
+    func addContact(contact: Contact)
 }
 
 class AddNewContactViewController: UIViewController {
 
     var delegate: AddNewContactDelegate?
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var numberTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,8 @@ class AddNewContactViewController: UIViewController {
     }
     
     @IBAction func addDidTapped(_ sender: UIButton) {
-        delegate?.addContact(name: textField.text!)
+        let contact = Contact(name: nameTextField.text!, number: numberTextField.text!)
+        delegate?.addContact(contact: contact)
         navigationController?.popViewController(animated: true)
     }
     

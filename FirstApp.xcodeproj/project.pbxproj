@@ -12,6 +12,7 @@
 		BE0424B029169A180012E742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0424AE29169A180012E742 /* Main.storyboard */; };
 		BE0424B229169A1A0012E742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0424B129169A1A0012E742 /* Assets.xcassets */; };
 		BE0424B529169A1A0012E742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0424B329169A1A0012E742 /* LaunchScreen.storyboard */; };
+		BE058F1B29290D1300BAEADF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE058F1A29290D1300BAEADF /* Contact.swift */; };
 		BE960E74291A8CC3004E23B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE960E73291A8CC3004E23B1 /* ViewController.swift */; };
 		BEB52F05292658D50096F40F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB52F04292658D50096F40F /* CustomCell.swift */; };
 		BEB52F07292666BC0096F40F /* AddNewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB52F06292666BC0096F40F /* AddNewContactViewController.swift */; };
@@ -25,6 +26,7 @@
 		BE0424B129169A1A0012E742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0424B429169A1A0012E742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0424B629169A1A0012E742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE058F1A29290D1300BAEADF /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BE960E73291A8CC3004E23B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEB52F04292658D50096F40F /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		BEB52F06292666BC0096F40F /* AddNewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				BE0424B329169A1A0012E742 /* LaunchScreen.storyboard */,
 				BE0424B629169A1A0012E742 /* Info.plist */,
 				BEB52F04292658D50096F40F /* CustomCell.swift */,
+				BE058F1A29290D1300BAEADF /* Contact.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE058F1B29290D1300BAEADF /* Contact.swift in Sources */,
 				BE960E74291A8CC3004E23B1 /* ViewController.swift in Sources */,
 				BE0424A929169A180012E742 /* AppDelegate.swift in Sources */,
 				BEB52F05292658D50096F40F /* CustomCell.swift in Sources */,

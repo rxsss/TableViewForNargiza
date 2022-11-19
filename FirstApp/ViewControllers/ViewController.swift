@@ -11,7 +11,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var names = ["Ivan", "Vadya", "Maga"]
+    var contacts = [
+        Contact(name: "Ivan", number: "+77078737478")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,21 +29,21 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: AddNewContactDelegate {
-    func addContact(name: String) {
-        names.append(name)
+    func addContact(contact: Contact) {
+        contacts.append(contact)
         tableView.reloadData()
     }
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return contacts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! CustomCell
-        cell.nameLabel.text = names[indexPath.row]
+        cell.nameLabel.text = contacts[indexPath.row].name
         
         return cell
     }
